@@ -7,14 +7,15 @@
 
 #include <iostream>
 #include "Pedido.h"
+using namespace std;
 
 int main() {
-    
+
     Pedido pedido;
     int opcion;
-    
+
     cin >> opcion;
-    
+
     switch (opcion) {
         case 1:
             pedido.leerArchivo("Pedido1.csv");
@@ -31,8 +32,8 @@ int main() {
         default:
             break;
     }
- 
+
     pedido.ticketCliente();
-    
+
     return 0;
 }
