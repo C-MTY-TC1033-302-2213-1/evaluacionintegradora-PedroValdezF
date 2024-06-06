@@ -46,6 +46,7 @@ void Pedido::ticketCliente() {
     for (int index = 0; index < cantidad; ++index) {
         if (arrPtrProductos[index] != nullptr) {
             string productoInfo = arrPtrProductos[index]->str();
+            cout << productoInfo << endl;
             total += arrPtrProductos[index]->calculaTotalPagar();
         }
     }
